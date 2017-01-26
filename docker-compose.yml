@@ -18,7 +18,7 @@ phpfpm:
     volumes: 
         - ./public:/usr/share/nginx/html
 
-mysql:
+mydb:
     image: mariadb
     environment: 
         MYSQL_ROOT_PASSWORD: admin
@@ -27,10 +27,8 @@ phpmyadmin:
     image: phpmyadmin/phpmyadmin
     restart: always
     links:
-        - mysql
+        - mydb
     ports:
         - "8183:80"
     environment: 
-        MYSQL_USERNAME: root
-        MYSQL_ROOT_PASSWORD: admin
-        PMA_ARBITRARY: 1        
+        - PMA_ARBITRARY=1        
