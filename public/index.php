@@ -1,3 +1,3 @@
 <?php 
- phpinfo();
+    echo "<h1>Hello WORrllldddd</h1>";
 ?>
