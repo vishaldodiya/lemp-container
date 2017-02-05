@@ -4,9 +4,9 @@ server {
     # this path MUST be exactly as docker-compose.fpm.volumes,
     # even if it doesn't exists in this dock.
     root /usr/share/nginx/html;
-    index index.php index.html index.html;
+    index index.php;
     
-    server_name 172.17.0.1;
+    server_name 192.168.99.100;
 
     location / {
         try_files $uri /index.php$is_args$args;

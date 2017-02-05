@@ -1,0 +1,4 @@
+2017/02/05 13:53:20 [emerg] 1#0: open() "/etc/nginx/fastcgi_param" failed (2: No such file or directory) in /etc/nginx/sites-enabled/default:25
+2017/02/05 13:54:57 [emerg] 1#0: open() "/etc/nginx/fastcgi_param" failed (2: No such file or directory) in /etc/nginx/sites-enabled/default:25
+2017/02/05 13:56:53 [error] 7#7: *1 open() "/usr/share/nginx/html/index.php" failed (2: No such file or directory), client: 172.17.0.1, server: localhost, request: "GET /index.php HTTP/1.1", host: "localhost:90"
+2017/02/05 13:57:01 [error] 7#7: *1 directory index of "/usr/share/nginx/html/mysite/" is forbidden, client: 172.17.0.1, server: localhost, request: "GET /mysite/ HTTP/1.1", host: "localhost:90"
